@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cash-flow-inputs-api-service
+  namespace: cash-flow-inputs
+spec:
+  selector:
+    app: cash-flow-inputs-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: NodePort

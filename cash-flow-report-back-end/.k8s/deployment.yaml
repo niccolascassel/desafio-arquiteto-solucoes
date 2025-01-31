@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cash-flow-report-api
+  namespace: cash-flow-report
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cash-flow-report-api
+  template:
+    metadata:
+      labels:
+        app: cash-flow-report-api
+    spec:
+      containers:
+      - name: cash-flow-report-api
+        image: [IMAGE-REPOSITORY]/cash-flow-report-api:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: CONNECTION_STRING
+          valueFrom:
+            secretKeyRef:
+              name: cash-flow-report-api-secrets
+              key: connection-string        
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"

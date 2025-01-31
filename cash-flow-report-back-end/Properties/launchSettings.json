@@ -1,0 +1,68 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:11471",
+      "sslPort": 44319
+    },
+    "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "Host=localhost;Port=30000;Database=postgresql;Username=postgresql;Password=postgresql;",
+        "JWT_SECRET": "rT6#9xK2$mP4@qF7&vL1!zN8*cH3^yE5",
+        "SMTP_SERVER": "smtp.gmail.com",
+        "SMTP_PORT": "587",
+        "SMTP_USER": "niccolas.cassel@gmail.com",
+        "SMTP_PASS": "umwdnggfwuiofixp"
+      }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5269",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "Host=localhost;Port=30000;Database=postgresql;Username=postgresql;Password=postgresql;",
+        "JWT_SECRET": "rT6#9xK2$mP4@qF7&vL1!zN8*cH3^yE5",
+        "SMTP_SERVER": "smtp.gmail.com",
+        "SMTP_PORT": "587",
+        "SMTP_USER": "niccolas.cassel@gmail.com",
+        "SMTP_PASS": "umwdnggfwuiofixp"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7198;http://localhost:5269",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "Host=localhost;Port=30000;Database=postgresql;Username=postgresql;Password=postgresql;",
+        "JWT_SECRET": "rT6#9xK2$mP4@qF7&vL1!zN8*cH3^yE5",
+        "SMTP_SERVER": "smtp.gmail.com",
+        "SMTP_PORT": "587",
+        "SMTP_USER": "niccolas.cassel@gmail.com",
+        "SMTP_PASS": "umwdnggfwuiofixp"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "Host=localhost;Port=30000;Database=postgresql;Username=postgresql;Password=postgresql;",
+        "JWT_SECRET": "rT6#9xK2$mP4@qF7&vL1!zN8*cH3^yE5",
+        "SMTP_SERVER": "smtp.gmail.com",
+        "SMTP_PORT": "587",
+        "SMTP_USER": "niccolas.cassel@gmail.com",
+        "SMTP_PASS": "umwdnggfwuiofixp"
+      }
+    }
+  }
+}
